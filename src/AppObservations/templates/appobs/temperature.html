@@ -1,0 +1,11 @@
+<h1>Welcome to the weather {{form_type}} Temperatura [°C] page</h1>
+
+
+<form method="POST" action=".">
+    {% csrf_token %}
+    {{form.as_p}}
+    <h4>Date in Format YYYY-MM-DD</h4>
+    <button type="submit">{{form_type}} Temperatura</button> 
+</form>
+<button onclick="location.href = '/home/'">Return Home</button> 
+

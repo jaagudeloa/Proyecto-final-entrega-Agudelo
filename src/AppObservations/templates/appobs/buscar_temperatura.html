@@ -1,0 +1,40 @@
+<h2>Buscar Temperatura</h2>
+
+<form method="get" action="{% url 'buscar_temperatura' %}">
+    <div class="mb-3">
+        <input type="text" name="q" class="form-control" placeholder="Insertar ubicacion" value="{{ query }}">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+
+{% if data %}
+<h2>Resultados</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>location</th>
+            <th>date</th>
+            <th>latitude</th>
+            <th>longitude</th>
+            <th>temperature[°C]</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for result in data %}
+        <tr>
+            <td>{{result.location}}</td>
+            <td>{{result.date}}</td>
+            <td>{{result.latitude}}</td>
+            <td>{{result.length}}</td>
+            <td>{{result.value}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No se encontraron ubicaciones.</p>
+{% endif %}
+<br>
+<br>
+<button onclick="location.href = '/home/'">Return Home</button>
