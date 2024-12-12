@@ -10,7 +10,7 @@ La aplicación incluye funcionalidades para agregar nuevos registros a la base d
 
 # Pasos para ejecutar:
 1. Clonar el repositorio en la terminal de tu maquina local: 
-git clone https://github.com/jaagudeloa/Tercera-pre-entrega-Agudelo.git
+git clone https://github.com/jaagudeloa/Proyecto-final-entrega-Agudelo
 
 2. Crear entorno virtual: python -m venv env
 
