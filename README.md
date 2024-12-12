@@ -24,29 +24,29 @@ git clone https://github.com/jaagudeloa/Tercera-pre-entrega-Agudelo.git
    python manage.py runserver
 
 6. Acceder desde el navegador al inicio del proyecto:
-   http://127.0.0.1:8000/home/
+   http://127.0.0.1:8000
 
 # Funcionalidades:
 
 1. Pagina de inicio :
-- URL : http://127.0.0.1:8000/home/
-- Descripcion: Es la pagina principal del proyecto donde se visualiza una barra de navegación para acceder a las diferentes secciones de registro [Temperatura, Velocidad Viento, Radiación Solar, Busqueda]
+- URL : http://127.0.0.1:8000
+- Descripcion: Es la pagina principal del proyecto donde se visualiza una barra de navegación para acceder a las diferentes secciones [Nosotros, Temperatura, Velocidad Viento, Radiación Solar, User]. La mayoria de menu son desplegables
 
-2. Registro de Temperatura:
-- URL (http://127.0.0.1:8000/create_temperature/) ó haciendo click en "Temperatura" en la barra de navegacion
-- Descripcion: En esta pagina se puede realizar el registro de Temperatura para una ubicación determinada. Se debe completar todos los campos y presionar el boton "Create Temperatura" para realizar el registro de los valores de Temperatura
+2. CRUD de Temperatura:
+- URL (http://127.0.0.1:8000/temperatura/) ó haciendo click en "Temperatura" en la barra de navegacion
+- Descripcion: En este menú desplegable se puede realizar el registro de Temperatura para una ubicación determinada. Además se pueden hacer las operaciones CRUD. Se debe completar todos los campos.
 
-3. Registro de Velocidad Viento:
-- URL (http://127.0.0.1:8000/create_wind/) ó haciendo click en "Velocidad Viento" en la barra de navegacion
-- Descripcion: En esta pagina se puede realizar el registro de Velocidad de Viento para una ubicación determinada. Se debe completar todos los campos y presionar el boton "Create Velocidad Viento" para realizar el registro de los valores de velocidad de viento
+3. CRUD de Velocidad Viento:
+- URL (http://127.0.0.1:8000/wind/) ó haciendo click en "Velocidad Viento" en la barra de navegacion
+- Descripcion: En este menú desplegable se puede realizar el registro de Velocidad de Viento para una ubicación determinada. Además se pueden hacer las operaciones CRUD. Se debe completar todos los campos.
 
-4. Registro de Radiación Solar:
-- URL (http://127.0.0.1:8000/create_solar/) ó haciendo click en "Radiación Global" en la barra de navegacion
-- Descripcion:  En esta pagina se puede realizar el registro de Radiación Global para una ubicación determinada. Se debe completar todos los campos y presionar el boton "Create Horas solar pico" para realizar el registro de los valores de Radiación Global
+4. CRUD de Radiación Solar:
+- URL (http://127.0.0.1:8000/solar/) ó haciendo click en "Radiación sOLAR" en la barra de navegacion
+- Descripcion:  En este menú desplegable se puede realizar el registro de Radiación Global para una ubicación determinada. Además se pueden hacer las operaciones CRUD. Se debe completar todos los campos.
 
-5. Busqueda de Temperatura:
-- URL (http://127.0.0.1:8000/buscar_temperatura/) ó haciendo click en "Busqueda" en la barra de navegacion
-- Descripcion: En esta pagina se puede realizar la busqueda de los registros de Temperatura para una ubicación determinada. Se debe insertar el nombre de una locación y todos los registros correspondientes a ésa ubicación seran listados.
+5. User:
+- URL (http://127.0.0.1:8000/cuentas/) ó haciendo click en "User" en la barra de navegacion
+- Descripcion: En este menú desplegable se puede realizar el registro, el acceso y el logout de los usuarios
 
 # Acceso al panel de administracion:
 Inicia sesion con tu usuario para acceder al panel de administracion de Django y ver la base de datos:

@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def home(request):
@@ -17,6 +18,7 @@ def home(request):
 def acerca(request):
     return render(request,'appobs/acerca.html',{})
 
+@login_required
 def buscar(request):
     query = request.GET.get('q', '')
     if query:
@@ -25,6 +27,7 @@ def buscar(request):
         data = TempVar.objects.all()
     return render(request, "appobs/buscar_temperatura.html", {"query":query, "data":data})
 
+@login_required
 def buscarsolar(request):
     query = request.GET.get('q', '')
     if query:
@@ -33,6 +36,7 @@ def buscarsolar(request):
         data = SolarVar.objects.all()
     return render(request, "appobs/buscar_solar.html", {"query":query, "data":data})
 
+@login_required
 def buscarwind(request):
     query = request.GET.get('q', '')
     if query:
