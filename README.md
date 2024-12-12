@@ -2,7 +2,7 @@
 
 # Web para registro y seguimiento de condiciones Climatologicas
 
-Este proyecto es una app web desarrollada con **Django** que permite gestionar algunas variables climatologicas como Temperatura[°C], Velocidad del Viento [m/s], horas solar pico (psh) [kWh/m2/d]. A meadiano plazo, se buscaria generar un modulo de análisis de datos que permita a través de dichas variables climatologicas identificar los mejores lugares geógraficos para desarrollar proyectos de energías renovables de tipo solar/fotovoltaica ó de energía eólica.
+Este proyecto es una app web desarrollada con **Django** que permite gestionar algunas variables climatológicas como Temperatura[°C], Velocidad del Viento [m/s], horas solar pico (psh) [kWh/m2/d]. A meadiano plazo, se buscaria generar un modulo de análisis de datos que permita a través de dichas variables climatologicas identificar los mejores lugares geógraficos para desarrollar proyectos de energías renovables de tipo solar/fotovoltaica ó de energía eólica.
 
 Fue creado respetando el  diseño **MVT (Model-View-Template)**
 
