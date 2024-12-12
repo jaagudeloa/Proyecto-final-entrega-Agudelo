@@ -1,0 +1,16 @@
+{% extends "appobs/home.html" %}
+{% block h1_header %} Crear Registro Velocidad Viento {%endblock h1_header %} 
+{% block main_content %}
+<br>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <h4>Date in Format YYYY-MM-DD</h4>
+    <input type="submit" value="Enviar">
+</form>
+<button onclick="location.href = '/'">Regresar Home</button>
+{% endblock main_content %}
+
+
+
+

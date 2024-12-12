@@ -1,0 +1,13 @@
+{% extends "appobs/home.html" %}
+{% block h1_header %} Sitio de Registro {%endblock h1_header %} 
+{% block h2_header %} Registrate!{%endblock h2_header %} 
+{% block main_content %}
+<br>
+<form action="" method="POST">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit">Registrate!</button>
+</form>
+<button onclick="location.href = '/'">Regresar Home</button>
+{% endblock main_content %}
+
+

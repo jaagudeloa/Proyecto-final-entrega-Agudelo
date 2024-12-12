@@ -1,0 +1,12 @@
+{% extends "appobs/home.html" %}
+{% block h1_header %} Detalle de Registros Temperatura {%endblock h1_header %} 
+{% block main_content %}
+<br>
+<p>Id: <i>{{ object.id }}</i></p>
+<p>Date: <i>{{ object.date }}</i></p>
+<p>Location: <i>{{ object.location }}</i></p>
+<p>Value: <i>{{ object.value }}</i></p>
+<button onclick="location.href = '/temperatura/lista/'">Regresar</button>
+{% endblock main_content %}
+
+

@@ -1,0 +1,19 @@
+{% extends "appobs/home.html" %}
+{% block h1_header %} Datos de Temperatura {%endblock h1_header %} 
+{% block main_content %}
+<br>
+    {% for object in object_list %}
+
+        <li>
+            <p>NOMBRE: {{object.date}}</p>
+            <p>
+                <a href="{% url 'Detail' object.id %}">Ver</a>
+                <a href="{% url 'Edit' object.id %}">Editar</a>
+                <a href="{% url 'Delete' object.id %}">Borrar</a>
+            </p>
+        </li>
+
+    {% endfor %}
+
+    <button onclick="location.href = '/'">Regresar Home</button>
+{% endblock main_content %}

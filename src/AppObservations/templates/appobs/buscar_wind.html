@@ -1,8 +1,8 @@
 {% extends "appobs/home.html" %}
-{% block h1_header %} Buscar Temperatura {%endblock h1_header %} 
+{% block h1_header %} Buscar Velocidad Viento {%endblock h1_header %} 
 {% block main_content %}
 <br>
-<form method="get" action="{% url 'buscar_temperatura' %}">
+<form method="get" action="{% url 'buscar_wind' %}">
     <div class="mb-3">
         <input type="text" name="q" class="form-control" placeholder="Insertar ubicacion" value="{{ query }}">
     </div>
@@ -19,7 +19,7 @@
             <th>date</th>
             <th>latitude</th>
             <th>longitude</th>
-            <th>temperature[°C]</th>
+            <th>velocidad viento[m/s]</th>
         </tr>
     </thead>
     <tbody>
@@ -39,7 +39,8 @@
 {% endif %}
 <br>
 <br>
-<button onclick="location.href = '/temperatura/lista/'">Regresar</button>
+<button onclick="location.href = '/wind/lista/'">Regresar</button>
 {% endblock main_content %}
+
 
 

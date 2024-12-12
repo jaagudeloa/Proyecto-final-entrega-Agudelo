@@ -1,0 +1,11 @@
+{% extends "appobs/home.html" %}
+{% block h1_header %} Iniciar Sesión {%endblock h1_header %} 
+{% block h2_header %} inicie sesión!{%endblock h2_header %} 
+{% block main_content %}
+<br>
+<form action="" method="POST">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit">Inciar sesion</button>
+</form>
+<button onclick="location.href = '/'">Regresar Home</button>
+{% endblock main_content %}

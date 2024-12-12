@@ -1,0 +1,15 @@
+{% extends "appobs/home.html" %}
+{% block h1_header %} Eliminar Registros Radiación Solar {%endblock h1_header %} 
+{% block main_content %}
+<br>
+<form action="" method="POST">
+    {% csrf_token %}
+
+    <p>¿Estás seguro que deseas borrar el curso "{{ object }}"?</p>
+    <input type="submit" value="Borrar">
+
+</form>
+<button onclick="location.href = '/solar/lista/'">Regresar</button>
+{% endblock main_content %}
+
+

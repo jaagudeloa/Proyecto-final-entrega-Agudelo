@@ -1,0 +1,16 @@
+{% extends "appobs/home.html" %}
+{% block h1_header %} Eliminar Registros Velocidad Viento {%endblock h1_header %} 
+{% block main_content %}
+<br>
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type="submit" value="Actualizar" />
+</form>
+<button onclick="location.href = '/wind/lista/'">Regresar</button>
+{% endblock main_content %}
+
+
+
